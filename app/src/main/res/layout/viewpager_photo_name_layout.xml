@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/viewpagershow1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/app_logo_round"
+        android:contentDescription="@string/action_settings" />
+
+    <TextView
+        android:id="@+id/TVuser_name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingStart="15dp"
+        android:paddingEnd="0dp"
+        android:gravity="center"
+        android:text="Welcome User"
+        android:textColor="#66003d"
+        android:textAlignment="center"
+        android:textSize="30sp"/>
+
+</LinearLayout>

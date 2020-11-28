@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Result_Fragment"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:background="#ff8080">
+
+        <Spinner
+            android:id="@+id/spinner_testSelect"
+            android:layout_width="0dp"
+            android:minHeight="35dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:entries="@array/select_test"/>
+
+        <Spinner
+            android:id="@+id/spinner_period"
+            android:layout_width="0dp"
+            android:minHeight="35dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:entries="@array/select_period"/>
+
+        <Spinner
+            android:id="@+id/spinner_subject"
+            android:layout_width="0dp"
+            android:minHeight="35dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#ffb3b3"/>
+
+    <LinearLayout
+        android:id="@+id/LLheadings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:background="#ffb3b3">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/test_subject"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:drawableEnd="@drawable/downward_arrow"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:text="@string/marks"
+            android:drawableEnd="@drawable/downward_arrow"/>
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:background="#ffd1d1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/LLparentResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/TVnothing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/nothing_to_show"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="#000000"/>
+
+</LinearLayout>

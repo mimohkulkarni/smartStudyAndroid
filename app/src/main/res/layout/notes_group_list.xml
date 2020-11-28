@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#991e00"
+    android:descendantFocusability="beforeDescendants"
+    android:weightSum="1.6">
+
+    <ImageView
+        android:id="@+id/ivCategory"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.3"
+        android:gravity="center"
+        android:contentDescription="@string/action_settings" />
+
+    <TextView
+        android:id="@+id/tvMainCategoryName"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:minHeight="50dp"
+        android:gravity="center_vertical|start"
+        android:textColor="#000000"/>
+
+    <CheckBox
+        android:id="@+id/cbMainCategory"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.3"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:focusable="false"
+        android:button="@drawable/custom_checkbox_theme" />
+
+</LinearLayout>

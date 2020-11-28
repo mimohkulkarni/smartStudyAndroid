@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav1_video"
+            android:icon="@drawable/video_icon"
+            android:title="@string/videos_lectures"/>
+
+        <item
+            android:id="@+id/nav1_imp_notes"
+            android:icon="@drawable/notes"
+            android:title="@string/important_notes" />
+
+        <item
+            android:id="@+id/nav1_home"
+            android:icon="@drawable/ic_menu_home"
+            android:title="@string/home" />
+
+        <item
+            android:id="@+id/nav1_quiz"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/quiz" />
+
+        <item
+            android:id="@+id/nav1_personal_info"
+            android:icon="@drawable/user"
+            android:title="@string/personal_info" />
+    </group>
+
+</menu>
